@@ -8,11 +8,11 @@ public class Kata2 {
 
     
     public static void main(String[] args) {
-        Integer[] data = {0,-1,7,100,100,1,1,1,5,8,8,9,54,6,54};
+        String[] data = {"Pepe","María","Marlom","Pepe","José","Pepe"};
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
         
-        for (Integer key : histogr.keySet()) {
+        for (String key : histogr.keySet()) {
             System.out.println(key + "==>" + histogr.get(key));
         }
     
